@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+.navbar{
+  display: flex;
+  background-color: azure;
+  padding: 15px;
+  padding-left: 25px;
+  font-size: 1em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar > .button{
+  color: gray;
+  cursor: pointer;
+}
+.navbar .button-selected{
+  color: orange;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.vertical-divider {
+  border: 1px solid lightgray;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.horizontal-divider {
+  border: 1px solid lightgray;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.homepage{
+  display:flex;
+  padding: 10px;
+}
+.sidebar-main{
+  background-color: gray;
+  margin: 20px;
+  padding: 10px;
+  padding-bottom: 15px;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: 300px; 
+}
+
+
+.description {
+  text-align: justify;
+}
+
+.newsfeed {
+  width: 100%;
+  margin: 20px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+
+.post-container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 200px;
+  margin-bottom: 10px;
+
+}
+
+
+.post-container input {
+  border-radius: 4px;
+}
+.newsfeed .post-container button {
+  background-color: orange;
   color: white;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+  padding: 8px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.newsfeed .post-container button:hover {
+  background-color: rgb(235, 153, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+input[type=text]{
+
+  width: 100%;
+  padding: 8px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus{
+  border: 3px solid #555;
+}
+
+.post{
+  background-color: white;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.post .date {
+  font-style: italic;
+  color: lightgray;
+  font-size: 12px;
 }
